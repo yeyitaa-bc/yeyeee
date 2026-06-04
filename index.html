@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            text-align: center;
+            background-color: #FFF9EE;
+        }
+
+        nav{
+            padding: 20px 0;
+        }
+
+        .logo{
+            font-weight: bold;
+        }
+
+        .menu ul{
+            list-style: none;
+            text-align: right;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li{
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .hero{
+            min-height: 80vh;
+            align-items: center;
+        }
+
+        .hero h1{
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero p{
+            margin: 25px;
+            font-size: 1.1rem;
+        }
+
+        .btn-hero{
+            background-color: #F4B942;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        .hero img{
+            width: 100%;
+            max-width: 450px;
+        }
+
+        @media(max-width:768px){
+
+            .logo{
+                text-align: center;
+            }
+
+            .menu{
+                text-align: center;
+                margin-top: 15px;
+            }
+
+            .menu ul{
+                text-align: center;
+            }
+
+            .menu li{
+                display: block;
+                margin: 10px 0;
+            }
+
+            .hero{
+                text-align: center;
+            }
+
+            .hero h1{
+                font-size: 2.2rem;
+            }
+
+            .hero img{
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <nav class="row align-items-center">            
+            <div class="col-sm-12 col-md-4 logo">
+                <h2>YEYEE</h2>
+            </div>
+
+            <div class="col-12 col-md-8 menu">
+                <ul>
+                    <li><a href="#">Sobre mí</a></li>
+                    <li><a href="#">Contáctame</a></li>
+                    <li><a href="#">Ver proyectos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section class="row hero">
+            <div class="col-12 col-md-6">
+                <h1>¿Le tienes miedo a destacar?</h1>
+                <p>Creamos contenido audiovisual pensado para marcas que quieren ser vistas.</p>
+                <button class="btn-hero">
+                    HAGÁMOSLO
+                </button>
+            </div>
+
+            <div class="col-12 col-md-5 text-center">
+                <img src="./assets/yeyee.jpeg" alt="Imagen principal" class="img-fluid">
+            </div>
+        </section>
+    </main>
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
